@@ -36,44 +36,78 @@
 					</header>
 
 				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="EPS.html">EPS for a PocketQube</a></li>
-							<li><a href="RC.html">Object avoiding RC car</a></li>
-							<li><a href="MultiWave.html">Digital multimeter and Waveform generator</a></li>
-							<li><a href="AudAmp.html">Audio Amplifier</a></li>
-							<li><a href="Breakout.html">Breakout game</a></li>
-							
-						</ul>
-					</nav>
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<!-- <li><a href="Masters.html">Trajectory Planning and Collision Avoidance for the Voyager Unmanned Ground Vehicle in Dynamic Environment</a></li>
+						<li><a href="EPSV2.html">EPS for a PocketQube V2</a></li> -->
+						<li><a href="EPS.html">EPS for a PocketQube V1</a></li>
+						<li><a href="RC.html">Object avoiding RC car</a></li>
+						<li><a href="MultiWave.html">Digital multimeter and Waveform generator</a></li>
+						<li><a href="AudAmp.html">Audio Amplifier</a></li>
+						<li><a href="Breakout.html">Breakout game</a></li>
+						
+					</ul>
+				</nav>
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>EPS for a PocketQube</h1>
-							<span class="image main"><img src="images/under construction.jpg" alt="" /></span>
+							<h1>EPS for a PocketQube V1</h1>
+							<span class="image main"><img src="images/EPSBanner.png" alt="" /></span>
 							
-							<p>Project in progress</p>
+							<h2>Project Overview</h2>
+							<p>My final year project focuses on the design and implementation of an Electrical Power System (EPS) tailored for a PocketQube picosatellite. This EPS is engineered to harvest solar energy using Maximum Power Point Tracking (MPPT) technology, efficiently store it in Li-ion batteries, and provide reliable power to the satellite’s bus system and subsystems.</p>
 
+							<h3>Objectives</h3>
+							<ul>
+								<li><b>Energy Harvesting:</b> Develop a system to capture and convert solar energy using photovoltaic cells. Implement MPPT algorithms to optimize energy harvesting under varying environmental conditions.</li>
+								<li><b>Power Regulation:</b> Design Boost and Buck converters to manage voltage levels for different subsystems, ensuring stable power supply.</li>
+								<li><b>Battery Management:</b> Create a robust battery management system (BMS) to handle charging and discharging cycles. Incorporate protection mechanisms to prevent overcharge, overdischarge, and short circuits.</li>
+								<li><b>System Integration:</b> Combine all components into a compact Printed Circuit Board (PCB) that fits within the constraints of the PocketQube form factor. Ensure the EPS meets the rigorous standards required for space applications.</li>
+							</ul>
 
+							<h3>Methodology</h3>
+							<p>The project methodology includes conducting a literature review, system design, prototyping, and rigorous testing.</p>
+							<ul>
+								<li><b>Literature Review:</b> Studied existing EPS designs and MPPT techniques to inform the design process. Studied the PocketQube standard to ensure compliance with its physical and operational requirements.</li>
+								<li><b>System Design:</b> Developed the hardware and software components for the EPS. Utilized the LTC3130-1 Boost-Buck converter for MPPT and the LTC4066 for battery charging. Implemented a Perturb & Observe algorithm for MPPT to dynamically adjust the operating point based on solar panel conditions.</li>
+								<li><b>Prototyping and Testing:</b> Built prototypes of the EPS and conducted rigorous testing under various conditions. Validated the performance of the MPPT algorithm, power regulation circuits, and BMS.</li>
+							</ul>
+
+							<h3>Key Components</h3>
+							<ul>
+								<li><b>Energy Harvesting:</b> Photovoltaic cells capture solar energy. The Perturb & Observe MPPT algorithm maximizes power extraction from the PV cells.</li>
+								<li><b>Power Regulation:</b> Boost and Buck converters adjust voltage levels to match the needs of different subsystems. Ensures efficient power delivery and minimizes energy loss.</li>
+								<li><b>Battery Management System:</b> Utilizes a Constant Current Constant Voltage (CCCV) charging algorithm for efficient battery charging. Incorporates the BQ29700 IC for battery protection, ensuring safe operation by preventing overcharge, overdischarge, and short circuits.</li>
+								<li><b>System Integration:</b> All components are integrated into a compact PCB layout that fits within the PocketQube’s form factor. Ensures seamless operation and compatibility with other subsystems of the satellite.</li>
+							</ul>
+
+							<h3>Results</h3>
+							<ul>
+								<li><b>Efficient Energy Harvesting:</b> Successfully implemented the Perturb & Observe MPPT algorithm, achieving optimal energy capture from the photovoltaic cells. Demonstrated the ability to dynamically adjust to changing environmental conditions, ensuring maximum power output.</li>
+								<li><b>Reliable Power Regulation:</b> Designed and tested Boost and Buck converters that effectively manage voltage levels, providing stable and efficient power to the satellite’s subsystems. Achieved high efficiency in power conversion, minimizing energy loss.</li>
+								<li><b>Robust Battery Management:</b> Developed a BMS that ensures safe and efficient charging and discharging of Li-ion batteries. Implemented comprehensive protection mechanisms to prevent battery damage and enhance longevity.</li>
+								<li><b>Successful System Integration:</b> Integrated all components into a compact and efficient PCB design, meeting the stringent size and weight constraints of the PocketQube standard. Conducted successful testing, demonstrating the EPS’s capability to power the satellite reliably in various conditions.</li>
+							</ul>
+
+							<h3>Conclusion</h3>
+							<p>The "Design of an Electrical Power System for a PocketQube" project provides a significant contribution to the field of picosatellite technology. The developed EPS offers a reliable and efficient solution for harvesting, storing, and distributing energy in space-constrained environments. The insights gained from this project can be applied to future EPS implementations, further advancing the capabilities of PocketQubes and other small satellites.</p>
+							<p>This project has been a rewarding journey, and I am deeply grateful to my supervisor, Dr. A. Barnard, and everyone who supported me throughout the process. The experience has equipped me with valuable skills in system design, power management, and project execution, and I look forward to leveraging these skills in future endeavors.</p>
+							
+							<p><b>Project Poster:</b></p>
+							<span class="image main"><img src="images/EPSPoster.jpg" alt="Project Poster" /></span>
+
+							<p><a href="https://github.com/DeanJeggels/Reports/blob/main/23676787_Jeggels_DE_skripsie2023.pdf" target="_blank">View the full project report on GitHub</a></p>
 						</div>
 					</div>
 
- 
-
-
-
-
-
-
-
-
-							
-					
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Dean Jeggels. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
